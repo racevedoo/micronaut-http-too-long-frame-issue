@@ -1,0 +1,19 @@
+micronaut:
+  application:
+    name: demo
+  server:
+    netty:
+      worker:
+        threads: 8
+      childOptions:
+        autoRead: true
+      max-initial-line-length: 1024
+  security:
+    enabled: true
+    token:
+      jwt:
+        enabled: true
+netty:
+  default:
+    allocator:
+      max-order: 3
